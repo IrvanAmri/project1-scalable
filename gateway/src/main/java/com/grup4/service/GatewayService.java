@@ -53,14 +53,14 @@ public class GatewayService {
 
     //helper section
     public String stringToBlocks(String plain){
-        String url = "http://localhost:8082/api/blocks?plain="+plain;
-        ResponseEntity<String> blocksResponse = restTemplate.getForEntity(url, String.class);
+        String url = "http://localhost:8082/api/blocks?plain={plain}";
+        ResponseEntity<String> blocksResponse = restTemplate.getForEntity(url, String.class, plain);
         return blocksResponse.getBody();
     }
 
     public String blocksToString(String blocks){
-        String url = "http://localhost:8083/api/text?json="+blocks;
-        ResponseEntity<String> textResponse = restTemplate.getForEntity(url, String.class);
+        String url = "http://localhost:8083/api/text?json={blocks}";
+        ResponseEntity<String> textResponse = restTemplate.getForEntity(url, String.class, blocks);
         return textResponse.getBody();
     }
     //helper section
@@ -79,4 +79,7 @@ public class GatewayService {
         kontrolEnkripsi = true;
     }
     //enkripsi section
+
+    //dekripsi section
+    //dekripsi section
 }

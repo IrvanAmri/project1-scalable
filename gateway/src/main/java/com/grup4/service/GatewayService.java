@@ -81,5 +81,17 @@ public class GatewayService {
     //enkripsi section
 
     //dekripsi section
+    public void dekripsiService(String cipher){
+        kafkaTemplate.send("cipher-dekripsi", stringToBlocks(cipher));
+    }
+
+    @KafkaListener(
+        topics = "plain-dekripsi",
+        groupId = "groupId2"
+    )
+    private void dekriptorListener(String data){
+        plainSaver = data;
+        kontrolDekripsi = true;
+    }
     //dekripsi section
 }

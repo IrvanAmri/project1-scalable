@@ -69,7 +69,7 @@ public class Helper1 {
             else if(arr[i]=='#'){output[i]=29;}
             else if(arr[i]=='$'){output[i]=30;}
             else if(arr[i]=='%'){output[i]=31;}
-
+            else output[i]=0;
         }
         return output;
     }

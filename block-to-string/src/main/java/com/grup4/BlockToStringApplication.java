@@ -1,4 +1,4 @@
-package com.grup4.blocktostring;
+package com.grup4;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

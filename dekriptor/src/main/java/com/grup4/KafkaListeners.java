@@ -12,17 +12,17 @@ public class KafkaListeners {
     private KafkaTemplate<String,String> kafkaTemplate;
 
     @KafkaListener(
-        topics = "plain-enkripsi",
+        topics = "cipher-dekripsi",
         groupId = "groupId"
     )
     void enkriptorListener(String data){
-        //panggil shuffle1
+        //panggil shuffle2Invers
 
         //panggil xor
 
-        //panggil shuffle2
-        String shuffle2Json="";
+        //panggil shuffle1Invers
+        String shuffle1InversJson="";
 
-        kafkaTemplate.send("cipher-enkripsi", shuffle2Json);
+        kafkaTemplate.send("plain-dekripsi", shuffle1InversJson);
     }
 }

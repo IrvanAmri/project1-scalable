@@ -13,8 +13,21 @@ public class Helper {
     //Json to BlockRepo
     public static BlockRepo jsonToBlockRepo(String json) throws JsonMappingException, JsonProcessingException{
         ObjectMapper mapper = new ObjectMapper();
-        return mapper.readValue(json, BlockRepo.class);
+        BlockRepo output = mapper.readValue(json, BlockRepo.class);
+        return output;
     }
+
+    // public static Block fungsi(Block block){
+    //     Block hasil = new Block();
+    //     hasil.setBlockElement(0, block.getBlockElement(9));
+    //     hasil.setBlockElement(1, block.getBlockElement(10));
+    //     hasil.setBlockElement(2, block.getBlockElement(2));
+    //     hasil.setBlockElement(3, block.getBlockElement(7));
+    //     hasil.setBlockElement(4, block.getBlockElement(0));
+    //     hasil.setBlockElement(5, block.getBlockElement(1));
+    //     hasil.setBlockElement(6, block.getBlockElement(3));
+    //     //dan seterusnya
+    // }
 
     //inverse mapping
     public static String inverseMapping(BlockRepo blockRepo){

@@ -21,6 +21,61 @@
             "projectName": "gateway",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-StringToBlockApplication<string-to-block>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.grup4.StringToBlockApplication",
+            "projectName": "string-to-block",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-EnkriptorApplication<enkriptor>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.grup4.EnkriptorApplication",
+            "projectName": "enkriptor",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DekriptorApplication<dekriptor>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.grup4.DekriptorApplication",
+            "projectName": "dekriptor",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-BlockToStringApplication<block-to-string>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.grup4.BlockToStringApplication",
+            "projectName": "block-to-string",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Shuffle1inverseApplication<shuffle1inverse>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.grup4.Shuffle1inverseApplication",
+            "projectName": "shuffle1inverse",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }

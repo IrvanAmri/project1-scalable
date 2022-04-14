@@ -44,7 +44,7 @@ public class Shuffle2InverseService {
 
     for(int i = 0; i < n; i++) {
       int rule = rules[i];
-      inverseShuffledBlock.setBlockElement(i, block.getBlockElement(rule));
+      inverseShuffledBlock.setBlockElement(rule, block.getBlockElement(i));
     }
 
     return inverseShuffledBlock;

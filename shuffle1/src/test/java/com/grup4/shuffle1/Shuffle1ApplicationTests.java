@@ -8,6 +8,7 @@ class Shuffle1ApplicationTests {
 
 	@Test
 	void contextLoads() {
+		
 	}
 
 }

@@ -14,7 +14,7 @@ public class GatewayApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(GatewayApplication.class, args);
 	}
-
+	
 	@Bean
 	public RestTemplate restTemplate(RestTemplateBuilder builder){
 		return builder

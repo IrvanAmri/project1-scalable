@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/dekriptor/shuffle-2")
+@RequestMapping("/api/enkriptor/shuffle-2")
 public class Shuffle2Controller {
   
   @Autowired

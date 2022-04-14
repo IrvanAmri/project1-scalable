@@ -20,7 +20,7 @@ public class Shuffle2Controller {
   private Shuffle2Service service;
 
   @GetMapping
-  public ResponseEntity<String> getString(@RequestParam(name="json") String json) throws JsonMappingException , JsonProcessingException {
+  public  ResponseEntity<String> getString(@RequestParam(name="json") String json) throws JsonMappingException , JsonProcessingException {
     return new ResponseEntity<String>(service.service(json), HttpStatus.OK);
   }
 }

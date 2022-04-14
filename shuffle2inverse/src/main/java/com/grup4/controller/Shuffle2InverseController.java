@@ -2,7 +2,7 @@ package com.grup4.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
-import com.grup4.service.Shuffle2Service;
+import com.grup4.service.Shuffle2InverseService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/enkriptor/shuffle-2")
-public class Shuffle2Controller {
+@RequestMapping("/api/dekriptor/shuffle-2-inverse")
+public class Shuffle2InverseController {
   
   @Autowired
-  private Shuffle2Service service;
+  private Shuffle2InverseService service;
 
   @GetMapping
   public ResponseEntity<String> getString(@RequestParam(name="json") String json) throws JsonMappingException , JsonProcessingException {

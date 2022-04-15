@@ -22,7 +22,7 @@ public class GatewayController {
         GatewayService.setKontrolEnkripsi(false);
         service.enkripsiService(plaintext);
         while(!GatewayService.isKontrolEnkripsi()){
-            System.out.println("");
+            System.out.println(GatewayService.isKontrolEnkripsi());
         }
         return new ResponseEntity<String>(service.blocksToString(GatewayService.getCipherSaver()), HttpStatus.OK);
     }
@@ -32,7 +32,7 @@ public class GatewayController {
         GatewayService.setKontrolDekripsi(false);
         service.dekripsiService(ciphertext);
         while(!GatewayService.isKontrolDekripsi()){
-            System.out.println("");
+            System.out.println(GatewayService.isKontrolDekripsi());
         }
         return new ResponseEntity<String>(service.blocksToString(GatewayService.getPlainSaver()), HttpStatus.OK);
     }

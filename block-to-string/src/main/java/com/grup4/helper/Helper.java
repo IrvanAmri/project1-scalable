@@ -75,11 +75,11 @@ public class Helper {
         else if(chara==24){output+="x";}
         else if(chara==25){output+="y";}
         else if(chara==26){output+="z";}
-        else if(chara==27){output+="!";}
-        else if(chara==28){output+="@";}
-        else if(chara==29){output+="#";}
-        else if(chara==30){output+="$";}
-        else if(chara==31){output+="%";}
+        else if(chara==27){output+="1";}
+        else if(chara==28){output+="2";}
+        else if(chara==29){output+="3";}
+        else if(chara==30){output+="4";}
+        else if(chara==31){output+="5";}
 
         return output;
     }

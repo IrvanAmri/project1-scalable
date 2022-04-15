@@ -64,11 +64,11 @@ public class Helper1 {
             else if(arr[i]=='X'){output[i]=24;}
             else if(arr[i]=='Y'){output[i]=25;}
             else if(arr[i]=='Z'){output[i]=26;}
-            else if(arr[i]=='!'){output[i]=27;}
-            else if(arr[i]=='@'){output[i]=28;}
-            else if(arr[i]=='#'){output[i]=29;}
-            else if(arr[i]=='$'){output[i]=30;}
-            else if(arr[i]=='%'){output[i]=31;}
+            else if(arr[i]=='1'){output[i]=27;}
+            else if(arr[i]=='2'){output[i]=28;}
+            else if(arr[i]=='3'){output[i]=29;}
+            else if(arr[i]=='4'){output[i]=30;}
+            else if(arr[i]=='5'){output[i]=31;}
             else output[i]=0;
         }
         return output;

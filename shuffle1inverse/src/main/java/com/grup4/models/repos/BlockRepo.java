@@ -36,7 +36,7 @@ public class BlockRepo {
         this.blocks.add(block);
     }
     
-    public int getSize() {
+    public int size() {
         return this.blocks.size();
     }
 }

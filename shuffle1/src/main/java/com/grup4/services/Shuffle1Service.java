@@ -24,7 +24,7 @@ public class Shuffle1Service {
 
         BlockRepo shuffled = new BlockRepo();
 
-        int n = blockRepo.getSize();
+        int n = blockRepo.size();
         for (int i = 0; i < n; i++) {
             Block shuffledBlock = new Block();
             
@@ -43,7 +43,7 @@ public class Shuffle1Service {
 
         Block shuffledBlock = new Block();
 
-        int n = block.getSize();
+        int n = block.size();
         int[] rules = {3,6,11,0,5,4,1,15,14,13,12,2,10,9,8,7};
         
         for (int i = 0; i < n; i++) {

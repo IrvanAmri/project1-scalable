@@ -22,7 +22,7 @@ public class Shuffle2InverseService {
   public BlockRepo shuffleInverseBlock(BlockRepo blockRepo) {
     BlockRepo inverseShuffled = new BlockRepo();
 
-    int n = blockRepo.getSize();
+    int n = blockRepo.size();
     for(int i = 0; i < n; i++) {
       Block inverseShuffledBlock = new Block();
 
@@ -39,7 +39,7 @@ public class Shuffle2InverseService {
   public Block shuffle2InverseBlock(Block block) {
     Block inverseShuffledBlock = new Block();
 
-    int n = block.getSize();
+    int n = block.size();
     int[] rules = {9,2,15,6,11,8,10,14,1,0,13,7,4,12,3,5};
 
     for(int i = 0; i < n; i++) {

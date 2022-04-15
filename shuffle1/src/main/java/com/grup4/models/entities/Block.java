@@ -28,7 +28,7 @@ public class Block {
         this.block[index] = value;
     }
 
-    public int getSize() {
+    public int size() {
         return this.block.length;
     }
 }

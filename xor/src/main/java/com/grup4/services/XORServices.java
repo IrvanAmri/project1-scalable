@@ -20,7 +20,7 @@ public class XORServices {
 
     BlockRepo xor = new BlockRepo();
 
-    int n = blockRepo.getSize();
+    int n = blockRepo.size();
     for(int i = 0; i < n; i++) {
       Block xorBlock = new Block();
 

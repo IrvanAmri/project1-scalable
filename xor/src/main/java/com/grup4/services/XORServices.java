@@ -6,6 +6,9 @@ import com.grup4.helpers.Helper;
 import com.grup4.models.entities.Block;
 import com.grup4.models.repos.BlockRepo;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class XORServices {
   
   public String service(String json) throws JsonMappingException, JsonProcessingException {

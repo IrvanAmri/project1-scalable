@@ -30,7 +30,7 @@ public class KafkaListeners {
         ResponseEntity<String> xorResponse = restTemplate.getForEntity(urlXor, String.class, shuffle1InverseResponse.getBody());
 
         //panggil shuffle1Inverse
-        String urlShuffle1Inverse = "http://localhost:8087/api/enkriptor/shuffle-1-inverse?json={shuffle2}";
+        String urlShuffle1Inverse = "http://localhost:8087/api/dekriptor/shuffle-1-inverse?json={shuffle2}";
         ResponseEntity<String> shuffle2InverseResponse = restTemplate.getForEntity(urlShuffle1Inverse, String.class, xorResponse.getBody());
 
         kafkaTemplate.send("plain-dekripsi", shuffle2InverseResponse.getBody());
